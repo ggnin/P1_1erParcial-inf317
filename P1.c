@@ -1,21 +1,22 @@
 #include <stdio.h>
+// Gladys Nina Mamani 
+// 12465858
 
-// Función para sumar dos números
 int suma(int *a, int *b) {
     return *a + *b;
 }
 
-// Función para restar dos números
+
 int resta(int *a, int *b) {
     return *a - *b;
 }
 
-// Función para multiplicar dos números
+
 int multiplicacion(int *a, int *b) {
     return (*a) * (*b);
 }
 
-// Función para dividir dos números
+s
 float division(int *a, int *b) {
     if (*b == 0) {
         printf("Error: División por cero\n");
@@ -25,7 +26,7 @@ float division(int *a, int *b) {
 }
 
 int main() {
-    // Ejemplo de uso de las funciones
+  
     int num1 = 8, num2 = 7;
     
     printf("Suma: %d\n", suma(&num1, &num2));
