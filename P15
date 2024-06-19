@@ -1,0 +1,21 @@
+import sys
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel
+
+class MiVentana(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.initUI()
+
+    def initUI(self):
+        self.setWindowTitle('Hola Mundo con PyQt5')
+        self.setGeometry(100, 100, 300, 150)
+
+        etiqueta = QLabel('¡Hola Mundo!', self)
+        etiqueta.move(50, 50)
+        etiqueta.adjustSize()
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ventana = MiVentana()
+    ventana.show()
+    sys.exit(app.exec_())
